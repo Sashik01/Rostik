@@ -1,0 +1,397 @@
+* {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #161616;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Забезпечуємо ширину 100% */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    margin-right: 80px;
+}
+
+footer {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footr_1 {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.circles_0 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.circles_0 div {
+    border-radius: 100%;
+    text-align: center;
+    width: 220px;
+    height: 220px;
+    margin-bottom: 60px; /* Відстань між елементами у вертикальному напрямку */
+}
+
+.circle {
+    border: none;
+    border-radius: 50%;
+}
+
+.mailing1 {
+    background-color: #FA9E9E;
+    width: 100%; /* Забезпечуємо ширину 100% */
+    margin: 0 auto;
+    padding: 0;
+}
+
+.mailing1 img {
+    border: none;
+    border-radius: 100px;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.maintext1 {
+    display: inline;
+    position: absolute;
+    color: white;
+    font-size: 2em;
+    padding-left: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.maintext1 h1 {
+    margin-bottom: -35px;
+}
+
+.maincircle1 {
+    background: #F41A1A;
+    padding: 20px;
+    width: 100%; /* Забезпечуємо ширину 100% */
+    box-sizing: border-box; /* Враховуємо padding у визначенні ширини */
+}
+
+.maincircle2 {
+    background: #D9D9D9;
+    border-radius: 100px;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.maincircle1 h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer section:nth-child(-n+2) {
+    background-color: #2D2D2D;
+    color: white;
+}
+
+footer section:nth-child(3) {
+    background-color: #212529;
+    color: white;
+}
+
+footer section {
+    margin: 0;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav.show {
+    display: none;
+}
+
+.menuButton {
+    display: none;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hiddenLinks {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .hiddenLinks {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    .hiddenLinks a {
+        color: white;
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    .hiddenLinks {
+        display: inline-block;
+        margin-left: 30px;
+        color: white;
+    }
+}
+
+@media (max-width: 800px) {
+    .maincircle2 {
+        margin-top: 0;
+        width: calc(100% - 40px);
+        padding: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .circle {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 800px) {
+    .footr_1 {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 800px) {
+    main > section:first-child {
+        display: none;
+    }
+}
+@media (max-width: 800px) {
+    footer section:first-child {
+        display: none;
+    }
+}
+
+.menuSection {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: black;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.menuContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.menuContent a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+/* Додані стилі для відображення меню */
+
+.menuSection {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: black;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.menuContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.menuContent a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+/* Зміни відповідно до ширини вікна браузера */
+@media (max-width: 800px) {
+    main > section:nth-child(2) {
+        display: none;
+    }
+}
+
+.menuButton {
+    margin: 40px; /* Відступи від країв header */
+}
+
+@media (max-width: 1600px) {
+    .maintext1 br:nth-of-type(n+3),
+    .maintext1 p:nth-of-type(n+3) {
+        display: none; /* Приховуємо всі <br> та <p> після третього */
+    }
+}
+@media (max-width: 950px) {
+    .maintext1 br:nth-of-type(n+2),
+    .maintext1 p:nth-of-type(n+2) {
+        display: none; /* Приховуємо всі <br> та <p> після третього */
+    }
+}
+
+#menuSection {
+    display: none;
+    position: absolute;
+    top: 8px; /* Встановлюємо відступ від верхнього краю висотою header */
+    right: 0;
+    background-color: black;
+    padding: 20px;
+    z-index: 1000;
+    height: calc(100vh + 713px); /* Висота вікна мінус висота header */
+    overflow-y: auto;
+}
+.videoSection {
+    background-color: #212529;
+    background-position: center;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.videoSection h2 {
+    color: white;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.videoSection p {
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.videoSection ul {
+	color: white;
+	list-style-type: none;
+}
+.videoSection iframe {
+    width: 70%;
+    height: 400px;
+    border: none;
+    margin: 0 auto;
+    display: block;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.contactForm {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+.contactForm h2 {
+    text-align: center;
+    color: #333;
+}
+
+.contactForm fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.contactForm legend {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.fieldset-content {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 150px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+.messageSent {
+    width: 80%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.messageSent h2 {
+    color: #333;
+}
+
+.messageSent p {
+    color: #666;
+}
+
+.returnButton {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.returnButton:hover {
+    background-color: #555;
+}
+

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ціни за послуги тренера</title>
+	<style>
+	* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav {
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+}
+
+header nav button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-left: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+header nav button:hover {
+    background-color: #000;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.subscription-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.subscription {
+    width: 200px;
+    padding: 20px;
+    margin: 20px 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.subscription h2 {
+    margin-top: 0;
+}
+
+.subscription p {
+    margin-bottom: 10px;
+}
+
+.subscription button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.subscription button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+.footr_1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footr_1 div {
+    flex: 1;
+}
+
+.footr_1 img {
+    margin: 0 5px;
+    vertical-align: middle;
+    max-width: 30px;
+}
+	</style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <img src="img\logo.png" width="160px" alt="логотип компанії">
+    <div id="hiddenLinks" class="hiddenLinks">
+        <a href="#">Новини</a>
+        <a href="#">Про нас</a>
+    </div>
+    <img id="sidebarButton" class="menuButton" src="img\3point.png" alt="Меню">
+    <nav>
+        <a href="#">Приватні школи</a>
+        <a href="#circles">Гуртки</a>
+        <a href="#">Розважальні центри</a>
+        <a href="#">Репетитори</a>
+        <a href="#">Новини</a>
+        <a href="#">Про нас</a>
+    </nav>
+</header>
+<main>
+<h1>Ціна за тренера</h1>
+    <div class="subscription-container">
+        <div class="subscription">
+            <h2>1 місяць</h2>
+            <p>Оплата за один місяць</p>
+            <p>700 грн</p>
+            <button>Зв'язатися з менеджером</button>
+        </div>
+        <div class="subscription">
+            <h2>3 місяця</h2>
+            <p>Оплата за три місяця</p>
+            <p>1800 грн</p>
+            <button>Зв'язатися з менеджером</button>
+        </div>
+        <div class="subscription">
+            <h2>7 місяців</h2>
+            <p>Оплата за сім місяців</p>
+            <p>4000 грн</p>
+            <button>Зв'язатися з менеджером</button>
+        </div>
+        <div class="subscription">
+            <h2>1 рік</h2>
+            <p>Оплата за дванадцять місяців</p>
+            <p>7600 грн</p>
+            <button>Зв'язатися з менеджером</button>
+        </div>
+    </div>
+</main>
+<footer>
+    <section>
+        <div class="footr_1">
+            <p>Kidsevent - це ваш провідник у світ захопливих дитячих заходів. <br>
+            Ми пропонуємо ідеї та ресурси для цікавого та корисного часу з вашими дітьми. Шукаєте ігри, вправи, чи поради щодо організації подій? Ми тут для вас. <br>
+            А ще, якщо ви хочете співпрацювати - зв'яжіться з нами. <br>
+            Дитинство - час відкриттів, і ми допоможемо йому бути незабутнім!<br>
+            </p>
+        </div>
+    </section>
+    <section>
+        <div class="footr_1">
+            <div>
+                <p>Є пропозиції чи запитання? Зв'язатися з нами:<br>
+                E-mail - Kidsevent@gmail.com<br>
+                Phone - 380 97 00 00 0 00<br>
+                </p>
+            </div>
+            <div>
+                <a href=""><img src="img\instagram.png" width="50px" alt="instagram"></a>
+                <a href=""><img src="img\facebook.png" width="50px" alt="facebook"></a>
+                <a href=""><img src="img\Telegram.png" width="50px" alt="telegram"></a>
+                <a href=""><img src="img\viber.png" width="50px" alt="viber"></a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <p style="text-align:center;">Copyright © 2024 kide</p>
+    </section>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
